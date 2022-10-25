@@ -34,24 +34,34 @@ body {
   position: absolute;
   right: 100%;
   width: 100%;
-  z-index: 99;
 }
 
 #yellow-fog {
-  -webkit-animation: fogslide 60s linear infinite;
-          animation: fogslide 60s linear infinite;
+  -webkit-animation: fogslide 90s linear infinite;
+          animation: fogslide 90s linear infinite;
   position: absolute;
-  top: 10%;
-  transform: translateX(-50%);
+  top: 2%;
+  z-index: 99;
 }
 
 #fog {
   -webkit-animation: fogslide 35s linear infinite;
           animation: fogslide 35s linear infinite;
   position: absolute;
-  top: 5%;
-  transform: translateX(-80%);
+  transform: scale(1.2);
+  top: 0;
   opacity: 0.4;
+  z-index: 100;
+}
+
+#fog2 {
+  -webkit-animation: fogslide 15s linear infinite;
+          animation: fogslide 15s linear infinite;
+  position: absolute;
+  transform: scale(1.2);
+  top: 10%;
+  opacity: 0.2;
+  z-index: 100;
 }
 
 #moon {
@@ -65,13 +75,13 @@ body {
   background: url("./assets/moon.png");
   background-size: cover;
   z-index: 9;
-  -webkit-animation: moonbounce 0.1s infinite;
-          animation: moonbounce 0.1s infinite;
+  -webkit-animation: moonbounce 0.08s infinite;
+          animation: moonbounce 0.08s infinite;
 }
 
 @-webkit-keyframes fogslide {
   0% {
-    right: -100%;
+    right: -99%;
   }
   100% {
     right: 100%;
@@ -80,7 +90,7 @@ body {
 
 @keyframes fogslide {
   0% {
-    right: -100%;
+    right: -99%;
   }
   100% {
     right: 100%;
@@ -88,17 +98,17 @@ body {
 }
 @-webkit-keyframes moonbounce {
   0% {
-    opacity: 0.6;
+    opacity: 0.55;
   }
   100% {
-    opacity: 0.35;
+    opacity: 0.3;
   }
 }
 @keyframes moonbounce {
   0% {
-    opacity: 0.6;
+    opacity: 0.55;
   }
   100% {
-    opacity: 0.35;
+    opacity: 0.3;
   }
 }/*# sourceMappingURL=index.css.map */
